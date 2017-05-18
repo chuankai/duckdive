@@ -82,7 +82,7 @@ int connect_socket;
 
 static void Connect_Thread(void const *argument)
 {
-	unsigned short seq = (uint16_t *) argument;
+	unsigned short seq = *(uint16_t *) argument;
 
     unsigned short seq_n;
     struct sockaddr_in destAddr;
